@@ -10,17 +10,10 @@ import Link from "next/link"
 import {
   Check,
   Sparkles,
-  Zap,
   Shield,
   Download,
-  Users,
   Play,
-  CheckCircle2,
   Monitor,
-  Laptop,
-  Smartphone,
-  ArrowRight,
-  Terminal,
   Code2,
   Calendar
 } from "lucide-react"
@@ -136,7 +129,7 @@ export default function Home() {
                   <div className="space-y-3 font-mono text-sm leading-relaxed text-slate-300">
                     <div className="flex gap-3">
                       <span className="text-violet-400 font-bold">Alex:</span>
-                      <span>Let's review the quarterly targets for Q4.</span>
+                      <span>Let&apos;s review the quarterly targets for Q4.</span>
                     </div>
                     <div className="flex gap-3">
                       <span className="text-cyan-400 font-bold">Sarah:</span>
@@ -144,7 +137,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-3">
                       <span className="text-violet-400 font-bold">Alex:</span>
-                      <span>Great, let's sync that with the calendar events.</span>
+                      <span>Great, let&apos;s sync that with the calendar events.</span>
                     </div>
                   </div>
 

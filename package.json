@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "port=$(grep -m1 '^PORT=' .env 2>/dev/null | cut -d= -f2); next dev -p ${port:-3000} --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "start": "port=$(grep -m1 '^PORT=' .env 2>/dev/null | cut -d= -f2); next start -p ${port:-3000}",
     "lint": "eslint"
   },
   "dependencies": {

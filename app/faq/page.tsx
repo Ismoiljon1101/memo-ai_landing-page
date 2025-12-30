@@ -66,7 +66,7 @@ export default function FAQPage() {
                 <AccordionTrigger value={`item-${index + 1}`}>
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent value={`item-${index + 1}`}>
+                <AccordionContent>
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
