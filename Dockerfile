@@ -17,4 +17,7 @@ COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/public ./public
 EXPOSE 3000
 ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+HEALTHCHECK --interval=1s --timeout=2s --retries=2 --start-period=3s \
+  CMD wget -q -O /dev/null http://127.0.0.1:3000/ || exit 1
 CMD ["node", "server.js"]
